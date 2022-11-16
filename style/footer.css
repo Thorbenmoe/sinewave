@@ -1,0 +1,23 @@
+a.footer {
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    border-top: solid white 1px;
+    background: #282a2b;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+footer ul li {
+    list-style: none;
+}
