@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/Header.css">
+    <link rel="stylesheet" href="../style/content.css">
+    <title>Sinuskurven</title>
+</head>
+
+<body onload="init()">
+
+    <header>
+        <div class="logo">
+            <a id="logoImg" class="logo "><img src="../img/headerHSBKmain.png " alt=" "></a>
+            <div class="circuit">
+                <ul>
+                    <li><a href="#">B2U</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">M2U</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section> <canvas class="myCanvas" id="myCanvas" width="610" height="610">
+       
+    </canvas></section>
+
+
+
+
+    <div class="sinus">
+        <label for="voltage">Spannung:</label>
+        <input type="text" id="voltage" name="Voltage" placeholder="Spannung hier eingeben">
+        <button onclick="render_sinus()">Eingabe</button>
+    </div>
+
+
+    <footer>
+        <ul>
+            <ul>
+                <li><a class="footer " href="# "> Impressum | Datenschutz </a></li>
+            </ul>
+            <ul>
+                <li><a class="footer " href="# ">Sinuskurvendesigner</a></li>
+            </ul>
+            <ul>
+                <li><a class="footer " href="# ">©Hans Sachs-Berufskolleg Oberhausen </a></li>
+            </ul>
+        </ul>
+    </footer>
+</body>
+<script src="../script/sinus.js"></script>
+<script src="../script/voltage.js"></script>
+
+</html>

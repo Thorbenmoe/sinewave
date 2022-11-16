@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --headerColor: #0066cc;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+header {
+    background: var(--headerColor);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    padding-top: 10px;
+    list-style: none;
+}
+
+ul#collapse_list {
+    display: flex;
+    transition: 350ms;
+    display: contents;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 15px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    transition: 250ms;
+    background: #fff;
+    color: #2b1055;
+}
+
+.collapse_menu {
+    display: flex;
+    width: 100;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Animation for Collapsebar Menu */
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}

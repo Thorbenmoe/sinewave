@@ -1,0 +1,28 @@
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+canvas#myCanvas {
+    background: white;
+}
+
+.myCanvas {
+    border: solid 3px rgb(62, 156, 8);
+}
+
+.sinus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: contents;
+}
+
+.circuit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
